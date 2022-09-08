@@ -1,1 +1,1182 @@
-# example-integration
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <title title>Document</title title>
+  <style>
+  *,a,img,li,p,ul, label {margin:0;padding:0;border:none;list-style:none;text-decoration:none}
+  a {color:#000!important}
+  body {font-family:Barlow,sans-serif}
+  section {margin-bottom:2%;width:100%}
+  main {margin-top:7rem}
+  h3 {font-size:1.2rem}
+  .fs-7 {font-size:.9rem}
+  .fs-8 {font-size:.8rem}
+  .fs-9 {font-size:.7rem}
+  .fa-bars,.navbar .navbar-brand {font-size:30px}
+  .d-desk {display:block}
+  .position-absolute.top-80 {top:80%}
+  .position-absolute.top-85 {top:85%}
+  .bg-primarybzb {background-color:#194f8f!important}
+  .bg-taupebzb {background-color:#c28c81!important}
+  .navbar .nav-item {padding:.5rem .2rem}
+  .navbar .nav-link {font-size:.9rem;color:#000}
+  .form-label {margin-bottom:0}
+  .fa-bars {color:#007bff}
+  .banner-title,h1 {font-size:2.5rem}
+  .bloc-title,h2 {font-size:2.2rem}
+  .banner-video iframe {background:url(https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw03e1c6d1/images/homepage/2022/HP1/bg-hp-hp1bis.jpg) top/cover no-repeat;position:relative;width:100%;height:750px}
+  .banner-video a {position:absolute;width:100%;height:100%;z-index:2;top:0;left:0}
+  .title {text-shadow:0 0 5px #000}
+  .fade {opacity:0;margin-top:-15px}
+  .section-denim .content-block {padding:20% 0}
+  .banner-img {max-width:280px;margin:20px auto}
+  .bestmoments img:hover {transform:scale(1.1);transition-duration:1s}
+  .bestmoments .item {width:15%;-ms-flex-align:center;align-items:center;margin-top:2vw}
+  .bestmoments img {width:100%;object-fit:cover;vertical-align:top}
+  .bestmoments .bestmoments--items {display: flex;justify-content: flex-start;align-items: center; justify-content: space-between; padding: 8px 12px 12px;overflow-x: scroll;}
+	.bestmoments .bestmoments--items--item {display: block;flex: 0 0 98px;min-width: 0;text-align:center;}
+	.bestmoments .bestmoments--items--item.image {width:125px;}
+	.bestmoments .bestmoments--items--item.bestmomentsdesc {margin-top: 8px;text-align: center;}
+	.bestmoments .bestmoments--items--item.image img {width: 80px;height: 80px;object-fit: cover;vertical-align: top;}
+	.bestmoments .bestmoments--items--item.bestmomentsdesc p {white-space: nowrap;text-overflow: ellipsis; overflow:hidden; width:80%;}
+	/*************** MOB ***************/
+	@media screen and (max-width:1024px) {
+		.bestmoments {display:block;}
+		#Zone2Home {display:none;}
+		.bestmoments .bestmoments--items--item.image img {width: 85px;height: 85px;}
+	}
+
+  .footer-reassurances img {height:3rem}
+  @media screen and (max-width:767px) {
+  .banner-video iframe {display:none}
+}
+  @media screen and (min-width:768px) {
+  .banner-title,h1 {font-size:4rem}
+  .bloc-title,h2 {font-size:3rem}
+}
+  @media screen and (min-width:992px) {
+  .d-desk,.dropdown-toggle::after,.navbar .nav-item .dropdown-menu {display:none}
+  .navbar .nav-item:hover .dropdown-menu {display:block}
+  .navbar .nav-item .dropdown-menu {margin-top:0}
+  .bestmoments .bestmoments--items {overflow-x: inherit;}
+	.bestmoments .bestmoments--items--item.image img {width: 7rem;height: auto;}
+	.bestmoments .bestmoments--items--item.bestmomentsdesc p {width:inherit;}
+  .footer-reassurances img {height:2.5rem}
+}
+  @media screen and (min-width:1024px) {
+  .bestmoments img {height:inherit;object-fit:inherit;vertical-align:inherit}
+}
+  @media screen and (min-width:1280px) {
+  .banner-video iframe {height:39vw}
+  .nav-item .nav-link:focus,.nav-item .nav-link:hover,.nav-item.show .nav-link {background-color:#fff;color:#444;box-shadow:0 2px 0 0 #000;transition:.15s}
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-white text-uppercase fixed-top" id="mainNav">
+      <div class="container d-desk align-items-center">
+        <a class="navbar-brand" href="#page-top"><img class="" src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw2208c0db/Bizzbee-SFRA/Logos-BZB/logo-bzb-new.svg" data-imagesmall="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw057128fe/Bizzbee-SFRA/BZB-logo-small.svg" alt="BZB vêtements homme et femme" width="auto" height="30" data-imagesmallwidth="60" data-imagesmallheight="40" data-imagewidth="auto" data-imageheight="30"></a>
+        <button class="navbar-toggler text-uppercase font-weight-bold bg-white text-white rounded border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> Menu <i class="fas fa-bars text-black"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link text-uppercase py-3 px-0 px-lg-2 rounded" href="#">Nouveautés</a>
+              <div class="ms-auto dropdown-menu w-100 col-xl-9 position-absolute start-0 submenu-group">
+                <ul class="d-flex justify-content-around submenu">
+                  <li class="nav-item mx-0 mx-lg-1">
+                      <ul>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item mx-0 mx-lg-1">
+                      <ul>
+                        <li><a class="nav-link" href="#"><img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw4d5f425a/Bizzbee-SFRA/2022/P1/new_biglayerfemme_hp1.jpg" alt="Nouveautés femme" loading="lazy" width="473" height="200"></a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item mx-0 mx-lg-1">
+                    <ul>
+                      <li><a class="nav-link" href="#"><img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dwe0152211/Bizzbee-SFRA/2022/P1/new_biglayerhomme_hp1.jpg" alt="Nouveautés homme" loading="lazy" width="473" height="200"></a></li>
+                    </ul>
+                </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link text-uppercase py-3 px-0 px-lg-2 rounded" href="#">Femme</a>
+              <div class="ms-auto dropdown-menu w-100 col-xl-9 position-absolute start-0 submenu-group">
+                <ul class="d-flex justify-content-around submenu">
+                  <li class="nav-item mx-0 mx-lg-1">
+                      <ul>
+                        <li><a class="nav-link fw-bold" href="#">Hauts</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item mx-0 mx-lg-1">
+                      <ul>
+                        <li><a class="nav-link fw-bold" href="#">Bas</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item mx-0 mx-lg-1">
+                      <ul>
+                        <li><a class="nav-link fw-bold" href="#">Accessoires</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item mx-0 mx-lg-1">
+                    <ul>
+                      <li><a class="nav-link fw-bold" href="#">Actus</a></li>
+                      <li><a class="nav-link" href="#">item</a></li>
+                      <li><a class="nav-link" href="#">item</a></li>
+                      <li><a class="nav-link" href="#">item</a></li>
+                      <li><a class="nav-link" href="#">item</a></li>
+                      <li><a class="nav-link" href="#">item</a></li>
+                    </ul>
+                </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link text-uppercase py-3 px-0 px-lg-2 rounded" href="#">Homme</a>
+              <div class="ms-auto dropdown-menu w-100 col-xl-9 position-absolute start-0 submenu-group">
+                <ul class="d-flex justify-content-around submenu">
+                  <li class="nav-item mx-0 mx-lg-1">
+                      <ul>
+                        <li><a class="nav-link fw-bold" href="#">Hauts</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item mx-0 mx-lg-1">
+                      <ul>
+                        <li><a class="nav-link fw-bold" href="#">Bas</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item mx-0 mx-lg-1">
+                      <ul>
+                        <li><a class="nav-link fw-bold" href="#">Accessoires</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item mx-0 mx-lg-1">
+                    <ul>
+                      <li><a class="nav-link fw-bold" href="#">Actus</a></li>
+                      <li><a class="nav-link" href="#">item</a></li>
+                      <li><a class="nav-link" href="#">item</a></li>
+                      <li><a class="nav-link" href="#">item</a></li>
+                      <li><a class="nav-link" href="#">item</a></li>
+                      <li><a class="nav-link" href="#">item</a></li>
+                    </ul>
+                </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link text-uppercase py-3 px-0 px-lg-2 rounded" href="#">🎮 cab'win</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link text-uppercase py-3 px-0 px-lg-2 rounded" href="#">👖 guide denim</a>
+              <div class="ms-auto dropdown-menu w-100 col-xl-9 position-absolute start-0 submenu-group">
+                <ul class="d-flex justify-content-around submenu">
+                  <li class="nav-item mx-0 mx-lg-1">
+                      <ul>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item mx-0 mx-lg-1">
+                      <ul>
+                        <li><a class="nav-link" href="#"><img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw4a549704/Bizzbee-SFRA/2022/P1/biglayerfemme-denim-P0E22.jpg" alt="denim femme" loading="lazy" width="473" height="200"></a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item mx-0 mx-lg-1">
+                    <ul>
+                      <li><a class="nav-link" href="#"><img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw4446e86d/Bizzbee-SFRA/2022/P1/biglayerhomme-denim-P0E22.jpg" alt="denim homme" loading="lazy" width="473" height="200"></a></li>
+                    </ul>
+                </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link text-uppercase py-3 px-0 px-lg-2 rounded" href="#">Collabs</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link text-uppercase py-3 px-0 px-lg-2 rounded fw-0" href="#">We are bzb</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link text-uppercase text-danger py-3 px-0 px-lg-2 rounded" href="#">Outlet</a>
+              <div class="ms-auto dropdown-menu w-100 col-xl-9 position-absolute start-0 submenu-group">
+                <ul class="d-flex justify-content-around submenu">
+                  <li class="nav-item mx-0 mx-lg-1">
+                      <ul>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">item</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item mx-0 mx-lg-1">
+                      <ul>
+                        <li><a class="nav-link" href="#"><img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dwb9b640f4/Bizzbee-SFRA/2021/P4/biglayer-outlet-f.jpg" alt="outlet femme" loading="lazy" width="473" height="200"></a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item mx-0 mx-lg-1">
+                    <ul>
+                      <li><a class="nav-link" href="#"><img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw51ab4072/Bizzbee-SFRA/2021/P4/biglayer-outlet-h.jpg" alt="outlet homme" loading="lazy" width="473" height="200"></a></li>
+                    </ul>
+                </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="search-desktop d-none d-xl-flex">
+          <div class="d-flex">
+            <form role="search" action="/recherche/" class="frz-nocache" method="get" name="simpleSearch">
+              <label class="form-label custom-search form-icon form-icon-only-right icon-navigation-search">
+              <input class="form-control search-field order-2 d-none" type="search" name="q" value="" placeholder=" " role="combobox" aria-describedby="search-assistive-text" aria-haspopup="listbox" aria-owns="search-results" aria-expanded="false" aria-autocomplete="list" aria-activedescendant="" aria-controls="search-results" aria-label="Rechercher" data-beaver-id="search" autocomplete="off">
+              <input type="hidden" value="fr_FR" name="lang">
+              <span class="input-label" id="search-label">Rechercher</span>
+              <button type="reset" name="reset-button" aria-label="reset" class="fa fa-times reset-button icon-navigation-cancel" style="display: none;"></button>
+              </label>
+              </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- section bdo promo -->
+    <section class="banner-promo bg-dark py-2">
+      <div class="text-center text-white"> C'est la reprise ! Livraison offerte dès 10€* </div>
+    </section>
+    <!-- section banner promo -->
+    <!-- <section class="banner position-relative">
+      <picture>
+        <source media="(max-width:769px)"
+          srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwcf204470/images/homepage/2022/HP1/oprdc-m.webp"
+          type="image/webp">
+        <source media="(max-width:769px)"
+          srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw91857f17/images/homepage/2022/HP1/oprdc-m.png"
+          type="image/png">
+        <img alt="BZB"
+          src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwbc8f1dc9/images/homepage/2022/HP1/oprdc.webp"
+          class="img-fluid center-block" height="350" width="1920">
+      </picture>
+      <div class="d-flex position-absolute top-85 start-50 translate-middle">
+        <p class="btn border border-danger border-3 text-danger rounded-pill bg-white text-uppercase me-5">
+          <strong>Femme</strong>
+        </p>
+        <p class="btn border border-danger border-3 text-danger rounded-pill bg-white text-uppercase">
+          <strong>Homme</strong>
+        </p>
+      </div>
+    </section> -->
+    <!-- section banner video -->
+    <section class="banner-video position-relative d-block">
+      <iframe src="https://player.vimeo.com/video/739974450?autoplay=1&amp;loop=1&amp;background=1" frameborder="0"
+        allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+        <picture>
+          <source srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwd22a3c51/images/homepage/2022/HP1/bg-hp-hp1bis-m.webp" type="image/webp">
+          <source srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw57dbcb96/images/homepage/2022/HP1/bg-hp-hp1bis-m.gif" type="image/gif">
+          <img alt="BZB" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwd22a3c51/images/homepage/2022/HP1/bg-hp-hp1bis-m.webp" class="img-fluid center-block d-desk" height="950" width="760">
+          </picture>
+      <div class="position-absolute top-80 start-50 translate-middle text-center ">
+        <div class="banner-title title text-white text-uppercase text-center mb-5 fade">
+          <strong>Nouveauté</strong>
+        </div>
+        <div class="d-flex justify-content-center">
+          <p class="btn border border-white border-3 text-white rounded-pill bg-transparent text-uppercase me-5">
+            <strong>Femme</strong>
+          </p>
+          <p class="btn border border-white border-3 text-white rounded-pill bg-transparent text-uppercase">
+            <strong>Homme</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- section jeu -->
+    <section class="position-relative">
+      <picture>
+        <source media="(max-width:769px)"
+          srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw5a45a05d/images/homepage/2022/HP1/hp-cabwin-m.webp"
+          type="image/webp">
+        <source media="(max-width:769px)"
+          srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/v1662265589668/images/homepage/2022/HP1/hp-cabwin-m.png"
+          type="image/png">
+        <img alt="BZB"
+          src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw933fbd73/images/homepage/2022/HP1/hp-cabwin.webp"
+          class="img-fluid center-block" height="350" width="1920" loading="lazy">
+      </picture>
+      <div class="d-flex position-absolute top-85 start-50 translate-middle">
+        <p class="btn border border-white border-3 text-white rounded-pill bg-transparent text-uppercase">
+          <strong>Je joue !</strong>
+        </p>
+      </div>
+    </section>
+    <!-- section denim -->
+    <section class="section-denim position-relative">
+      <div class="row w-100 d-flex flex-md-column flex-lg-row">
+        <div class="col-lg-6  col-md-12 p-0">
+          <picture>
+            <source
+              srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwc1ff86fe/images/homepage/2022/HP1/img-diptyque-denim.webp"
+              type="image/webp">
+            <source
+              srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw7a074d8f/images/homepage/2022/HP1/img-diptyque-denim.jpg"
+              type="image/jpg">
+            <img alt="denim"
+              src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwc1ff86fe/images/homepage/2022/HP1/img-diptyque-denim.webp"
+              class="img-fluid center-block" height="760" width="950" loading="lazy">
+          </picture>
+        </div>
+        <div class="col-lg-6 col-md-12 bg-primarybzb text-white px-5">
+          <div class="container content-block">
+            <p class="banner-title title text-white text-uppercase text-center mb-2 fade">
+              <strong>Guide denim</strong>
+            </p>
+            <p class="text-center mb-4">À la recherche du jean parfait qui met ton body en valeur ? <br>Fit, matière,
+              délavage : on te dit TOUT sur notre collection de jeans ! </p>
+            <div class="d-flex justify-content-center">
+              <p class="btn border border-white border-3 text-white rounded-pill bg-transparent text-uppercase me-5">
+                <strong>Femme</strong>
+              </p>
+              <p class="btn border border-white border-3 text-white rounded-pill bg-transparent text-uppercase">
+                <strong>Homme</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section produits -->
+    <section>
+      <div class="container">
+        <row>
+          <div class="d-flex justify-content-around text-center mb-4 onlyMobile">
+            <div class="col-lg-4 col-md-12 position-relative me-3">
+              <div class="position-absolute top-80 start-50 translate-middle text-center ">
+                <div class="bloc-title title text-white text-uppercase text-center mb-5 fade">
+                  <strong>Robes</strong>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="btn border border-white border-3 text-white rounded-pill bg-transparent text-uppercase">
+                    <strong>Je shoppe</strong>
+                  </p>
+                </div>
+              </div>
+              <picture>
+                <source
+                  srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw502e8954/images/homepage/2022/HP1/img-triptyque_robe.webp"
+                  type="image/webp">
+                <source
+                  srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw1a8c2028/images/homepage/2022/HP1/img-triptyque_robe.jpg"
+                  type="image/jpg">
+                <img alt="collection femme"
+                  src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw502e8954/images/homepage/2022/HP1/img-triptyque_robe.webp"
+                  class="img-fluid center-block hp-categ" height="950" width="760" loading="lazy">
+              </picture>
+            </div>
+            <div class="col-lg-4 col-md-12 position-relative me-3">
+              <div class="position-absolute top-80 start-50 translate-middle text-center ">
+                <div class="bloc-title title text-white text-uppercase text-center mb-5 fade">
+                  <strong>Basics</strong>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="btn border border-white border-3 text-white rounded-pill bg-transparent text-uppercase">
+                    <strong>Je shoppe</strong>
+                  </p>
+                </div>
+              </div>
+              <picture>
+                <source
+                  srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw7bffeb07/images/homepage/2022/HP1/img-triptyque_trio-girls.webp"
+                  type="image/webp">
+                <source
+                  srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw3ccb6d26/images/homepage/2022/HP1/img-triptyque_trio-girls.jpg"
+                  type="image/jpg">
+                <img alt="collection femme"
+                  src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw7bffeb07/images/homepage/2022/HP1/img-triptyque_trio-girls.webp"
+                  class="img-fluid center-block hp-categ" height="950" width="760" loading="lazy">
+              </picture>
+            </div>
+            <div class="col-lg-4 col-md-12 position-relative me-3">
+              <div class="position-absolute top-80 start-50 translate-middle text-center ">
+                <div class="bloc-title title text-white text-uppercase text-center mb-5 fade">
+                  <strong>Accessoires</strong>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="btn border border-white border-3 text-white rounded-pill bg-transparent text-uppercase">
+                    <strong>Je shoppe</strong>
+                  </p>
+                </div>
+              </div>
+              <picture>
+                <source
+                  srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw0340f607/images/homepage/2022/HP1/img-triptyque_access-girl.webp"
+                  type="image/webp">
+                <source
+                  srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw76cc8260/images/homepage/2022/HP1/img-triptyque_access-girl.jpg"
+                  type="image/jpg">
+                <img alt="collection femme"
+                  src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw0340f607/images/homepage/2022/HP1/img-triptyque_access-girl.webp"
+                  class="img-fluid center-block hp-categ" height="950" width="760">
+              </picture>
+            </div>
+          </div>
+        </row>
+        <row>
+          <div class="d-flex justify-content-around text-center onlyMobile">
+            <div class="col-lg-4 col-md-12 position-relative me-3">
+              <div class="position-absolute top-80 start-50 translate-middle text-center ">
+                <div class="bloc-title title text-white text-uppercase text-center mb-5 fade">
+                  <strong>Vestes</strong>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p
+                    class="btn border border-white border-3 text-white rounded-pill bg-transparent text-uppercase me-5">
+                    <strong>Je shoppe</strong>
+                  </p>
+                </div>
+              </div>
+              <picture>
+                <source
+                  srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw34ee977e/images/homepage/2022/HP1/img-triptyque_veste.webp"
+                  type="image/webp">
+                <source
+                  srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw9647534e/images/homepage/2022/HP1/img-triptyque_veste.jpg"
+                  type="image/jpg">
+                <img alt="collection homme"
+                  src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw34ee977e/images/homepage/2022/HP1/img-triptyque_veste.webp"
+                  class="img-fluid center-block hp-categ" height="950" width="760" loading="lazy">
+              </picture>
+            </div>
+            <div class="col-lg-4 col-md-12 position-relative me-3">
+              <div class="position-absolute top-80 start-50 translate-middle text-center ">
+                <div class="bloc-title title text-white text-uppercase text-center mb-5 fade">
+                  <strong>Licences</strong>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p
+                    class="btn border border-white border-3 text-white rounded-pill bg-transparent text-uppercase me-5">
+                    <strong>Je shoppe</strong>
+                  </p>
+                </div>
+              </div>
+              <picture>
+                <source
+                  srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw3645e252/images/homepage/2022/HP1/img-triptyque_licences.webp"
+                  type="image/webp">
+                <source
+                  srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw168f740a/images/homepage/2022/HP1/img-triptyque_licences.jpg"
+                  type="image/jpg">
+                <img alt="collection homme"
+                  src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw3645e252/images/homepage/2022/HP1/img-triptyque_licences.webp"
+                  class="img-fluid center-block hp-categ" height="950" width="760" loading="lazy">
+              </picture>
+            </div>
+            <div class="col-lg-4 col-md-12 position-relative me-3">
+              <div class="position-absolute top-80 start-50 translate-middle text-center ">
+                <div class="bloc-title title text-white text-uppercase text-center mb-5 fade">
+                  <strong>Basics</strong>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p
+                    class="btn border border-white border-3 text-white rounded-pill bg-transparent text-uppercase me-5">
+                    <strong>Je shoppe</strong>
+                  </p>
+                </div>
+              </div>
+              <picture>
+                <source
+                  srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwa5d0311c/images/homepage/2022/HP1/img-triptyque_trio-boys.webp"
+                  type="image/webp">
+                <source
+                  srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw1d6011fc/images/homepage/2022/HP1/img-triptyque_trio-boys.jpg"
+                  type="image/jpg">
+                <img alt="collection homme"
+                  src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwa5d0311c/images/homepage/2022/HP1/img-triptyque_trio-boys.webp"
+                  class="img-fluid center-block hp-categ" height="950" width="760" loading="lazy">
+              </picture>
+            </div>
+          </div>
+        </row>
+      </div>
+    </section>
+    <!-- section nouveautés -->
+    <section>
+      <div class="container px-0">
+        <h4 class="text-uppercase text-center">
+          <strong>De la nouveauté par ici !</strong>
+        </h4>
+        <div class="responsive">
+          <div class="me-2">
+            <img class="tile-image"
+              src="https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw31e75cd5/images/2001819_18000_V1.jpg?sw=400&amp;sh=600&amp;sm=cut"
+              alt="Jean straight" title="Jean straight"
+              onmouseover="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw2b3949ea/images/2001819_18000_V10.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              onmouseout="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw31e75cd5/images/2001819_18000_V1.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              style="width: 100%; height: 100%;">
+            <div class="desc-price-prdt text-center mt-4">
+              <p class="desc">Jean straight</p>
+              <p class="price">39,99€</p>
+            </div>
+          </div>
+          <div class="me-2">
+            <img class="tile-image"
+              src="https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dwd9376cc7/images/2001514_11236_V1.jpg?sw=400&amp;sh=600&amp;sm=cut"
+              alt="Jean wide leg" title="Jean wide leg"
+              onmouseover="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dwce5722f5/images/2001514_11236_V10.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              onmouseout="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dwd9376cc7/images/2001514_11236_V1.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              style="width: 100%; height: 100%;">
+            <div class="desc-price-prdt text-center mt-4">
+              <p class="desc">Jean straight</p>
+              <p class="price">39,99€</p>
+            </div>
+          </div>
+          <div class="me-2">
+            <img class="tile-image"
+              src="https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw51a281aa/images/2001628_11820_V1.jpg?sw=400&amp;sh=600&amp;sm=cut"
+              alt="Pull torsadé" title="Pull torsadé"
+              onmouseover="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw077315cb/images/2001628_11820_V10.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              onmouseout="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw51a281aa/images/2001628_11820_V1.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              style="width: 100%; height: 100%;">
+            <div class="desc-price-prdt text-center mt-4">
+              <p class="desc">Jean straight</p>
+              <p class="price">39,99€</p>
+            </div>
+          </div>
+          <div class="me-2">
+            <img class="tile-image"
+              src="https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw79348dc5/images/2001962_11235_V1.jpg?sw=400&amp;sh=600&amp;sm=cut"
+              alt="Jean loose stone" title="Jean loose stone"
+              onmouseover="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dwb161ebe6/images/2001962_11235_V10.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              onmouseout="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw79348dc5/images/2001962_11235_V1.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              style="width: 100%; height: 100%;">
+            <div class="desc-price-prdt text-center mt-4">
+              <p class="desc">Jean straight</p>
+              <p class="price">39,99€</p>
+            </div>
+          </div>
+          <div class="me-2">
+            <img class="tile-image"
+              src="https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw31e75cd5/images/2001819_18000_V1.jpg?sw=400&amp;sh=600&amp;sm=cut"
+              alt="Jean straight" title="Jean straight"
+              onmouseover="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw2b3949ea/images/2001819_18000_V10.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              onmouseout="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw31e75cd5/images/2001819_18000_V1.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              style="width: 100%; height: 100%;">
+            <div class="desc-price-prdt text-center mt-4">
+              <p class="desc">Jean straight</p>
+              <p class="price">39,99€</p>
+            </div>
+          </div>
+          <div class="me-2">
+            <img class="tile-image"
+              src="https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw69aafab6/images/2002485_18000_V2.jpg?sw=400&amp;sh=600&amp;sm=cut"
+              alt="Jean Loose couleur" title="Jean Loose couleur"
+              onmouseover="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dwb0c110a9/images/2002485_18000_V3.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              onmouseout="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw69aafab6/images/2002485_18000_V2.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              style="width: 100%; height: 100%;">
+            <div class="desc-price-prdt text-center mt-4">
+              <p class="desc">Jean straight</p>
+              <p class="price">39,99€</p>
+            </div>
+          </div>
+          <div class="me-2">
+            <img class="tile-image"
+              src="https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw31e75cd5/images/2001819_18000_V1.jpg?sw=400&amp;sh=600&amp;sm=cut"
+              alt="Jean straight" title="Jean straight"
+              onmouseover="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw2b3949ea/images/2001819_18000_V10.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              onmouseout="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw31e75cd5/images/2001819_18000_V1.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              style="width: 100%; height: 100%;">
+            <div class="desc-price-prdt text-center mt-4">
+              <p class="desc">Jean straight</p>
+              <p class="price">39,99€</p>
+            </div>
+          </div>
+          <div class="me-2">
+            <img class="tile-image"
+              src="https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw81bd6982/images/2001489_15453_V2.jpg?sw=400&amp;sh=600&amp;sm=cut"
+              alt="Dad pant" title="Dad pant"
+              onmouseover="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dwf493aece/images/2001489_15453_V3.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              onmouseout="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw81bd6982/images/2001489_15453_V2.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              style="width: 100%; height: 100%;">
+            <div class="desc-price-prdt text-center mt-4">
+              <p class="desc">Jean straight</p>
+              <p class="price">39,99€</p>
+            </div>
+          </div>
+          <div class="me-2">
+            <img class="tile-image"
+              src="https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw12622646/images/2002102_11863_V1.jpg?sw=400&amp;sh=600&amp;sm=cut"
+              alt="Blouson campus" title="Blouson campus"
+              onmouseover="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dwa3fec5f7/images/2002102_11863_V10.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              onmouseout="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw12622646/images/2002102_11863_V1.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              style="width: 100%; height: 100%;">
+            <div class="desc-price-prdt text-center mt-4">
+              <p class="desc">Jean straight</p>
+              <p class="price">39,99€</p>
+            </div>
+          </div>
+          <div class="me-2">
+            <img class="tile-image"
+              src="https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw15fc413c/images/2001477_16378_V1.jpg?sw=400&amp;sh=600&amp;sm=cut"
+              alt="Veste sherpa" title="Veste sherpa"
+              onmouseover="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw129bfa99/images/2001477_16378_V10.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              onmouseout="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw15fc413c/images/2001477_16378_V1.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              style="width: 100%; height: 100%;">
+            <div class="desc-price-prdt text-center mt-4">
+              <p class="desc">Jean straight</p>
+              <p class="price">39,99€</p>
+            </div>
+          </div>
+          <div class="me-2">
+            <img class="tile-image"
+              src="https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw8efe0882/images/2001806_18000_V2.jpg?sw=400&amp;sh=600&amp;sm=cut"
+              alt="Chemise velours fine raie" title="Chemise velours fine raie"
+              onmouseover="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw9d40dc50/images/2001806_18000_V3.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              onmouseout="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw8efe0882/images/2001806_18000_V2.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              style="width: 100%; height: 100%;">
+            <div class="desc-price-prdt text-center mt-4">
+              <p class="desc">Jean straight</p>
+              <p class="price">39,99€</p>
+            </div>
+          </div>
+          <div class="me-2">
+            <img class="tile-image"
+              src="https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw7e651ade/images/2001876_16698_V2.jpg?sw=400&amp;sh=600&amp;sm=cut"
+              alt="Sweatshirt université &quot;Harvard&quot;" title="Sweatshirt université &quot;Harvard&quot;"
+              onmouseover="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw32bb2a7c/images/2001876_16698_V3.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              onmouseout="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw7e651ade/images/2001876_16698_V2.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              style="width: 100%; height: 100%;">
+            <div class="desc-price-prdt text-center mt-4">
+              <p class="desc">Jean straight</p>
+              <p class="price">39,99€</p>
+            </div>
+          </div>
+          <div class="me-2">
+            <img class="tile-image"
+              src="https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dwb7e1749e/images/2001504_10003_V2.jpg?sw=400&amp;sh=600&amp;sm=cut"
+              alt="T-shirt manches longues bandes" title="T-shirt manches longues bandes"
+              onmouseover="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw34d9cec9/images/2001504_10003_V3.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              onmouseout="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dwb7e1749e/images/2001504_10003_V2.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              style="width: 100%; height: 100%;">
+            <div class="desc-price-prdt text-center mt-4">
+              <p class="desc">Jean straight</p>
+              <p class="price">39,99€</p>
+            </div>
+          </div>
+          <div class="me-2">
+            <img class="tile-image"
+              src="https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw75679cf8/images/2001504_11020_V2.jpg?sw=400&amp;sh=600&amp;sm=cut"
+              alt="T-shirt manches longues bandes" title="T-shirt manches longues bandes"
+              onmouseover="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw27f0f175/images/2001504_11020_V3.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              onmouseout="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw75679cf8/images/2001504_11020_V2.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              style="width: 100%; height: 100%;">
+            <div class="desc-price-prdt text-center mt-4">
+              <p class="desc">Jean straight</p>
+              <p class="price">39,99€</p>
+            </div>
+          </div>
+          <div class="me-2">
+            <img class="tile-image"
+              src="https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw66ede8cb/images/2001927_10003_V1.jpg?sw=400&amp;sh=600&amp;sm=cut"
+              alt="T-shirt PRINGLES" title="T-shirt PRINGLES"
+              onmouseover="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw351155ff/images/2001927_10003_V10.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              onmouseout="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw66ede8cb/images/2001927_10003_V1.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              style="width: 100%; height: 100%;">
+            <div class="desc-price-prdt text-center mt-4">
+              <p class="desc">Jean straight</p>
+              <p class="price">39,99€</p>
+            </div>
+          </div>
+          <div class="me-2">
+            <img class="tile-image"
+              src="https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw5156d47b/images/2001928_10001_V2.jpg?sw=400&amp;sh=600&amp;sm=cut"
+              alt="T-shirt ONE PIECE" title="T-shirt ONE PIECE"
+              onmouseover="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw8bed50ea/images/2001928_10001_V3.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              onmouseout="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw5156d47b/images/2001928_10001_V2.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              style="width: 100%; height: 100%;">
+            <div class="desc-price-prdt text-center mt-4">
+              <p class="desc">Jean straight</p>
+              <p class="price">39,99€</p>
+            </div>
+          </div>
+          <div class="me-2">
+            <img class="tile-image"
+              src="https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dwecba626f/images/2002890_10003_V2.jpg?sw=400&amp;sh=600&amp;sm=cut"
+              alt="T-shirt brodé coeurs" title="T-shirt brodé coeurs"
+              onmouseover="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dw561d9259/images/2002890_10003_V3.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              onmouseout="this.src='https://www.b-z-b.com/dw/image/v2/AAHK_PRD/on/demandware.static/-/Sites-Bizzbee-master-catalog/default/dwecba626f/images/2002890_10003_V2.jpg?sw=400&amp;sh=600&amp;sm=cut'"
+              style="width: 100%; height: 100%;">
+            <div class="desc-price-prdt text-center mt-4">
+              <p class="desc">Jean straight</p>
+              <p class="price">39,99€</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section offres exclusive -->
+    <section class="bg-taupebzb">
+      <div class="row w-100">
+        <div class="col">
+          <div class="py-4">
+            <h3 class="text-white text-center text-uppercase">Jusqu'au 6 septembre 2022 inclus, découvre des offres
+              exclusives !</h3>
+            <picture>
+              <source
+                srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwcd36796e/images/landing/2022/offres-partenaires/marques.webp"
+                type="image/webp">
+              <source
+                srcset="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw6d86ac34/images/landing/2022/offres-partenaires/marques.png"
+                type="image/jpg">
+              <img alt="marques"
+                src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/v1662394060499/images/landing/2022/offres-marques/jb.webp"
+                class="d-block mx-auto banner-img">
+            </picture>
+            <div class="d-block text-center">
+              <p class="btn border border-white border-3 text-white rounded-pill bg-transparent text-uppercase">
+                <strong>Je découvre</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section bests du moment -->
+    <section>
+      <div class="container">
+        <h4 class="text-uppercase text-center">
+          <strong>Nos best du moment</strong>
+        </h4>
+        <!-- <div class="bestmoments">
+          <div class="row d-flex justify-content-around">
+            <div class="item col-2 px-4">
+              <img alt="Nouveautés"
+                src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2022/content/home/S35/hp_entree_categorie_nouveautes.png" />
+              <p class="text-center"> Nouveaut&eacute;s </p>
+            </div>
+            <div class="item col-2 px-4">
+              <img alt="Denim"
+                src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2022/content/home/S35/hp_entree_categorie_denim.png" />
+              <p class="text-center"> Denim </p>
+            </div>
+            <div class="item col-2 px-4">
+              <img alt="T-shirts &amp; débardeurs"
+                src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2022/content/home/S35/hp_entree_categorie_tshirts_debardeurs.png" />
+              <p class="text-center"> T-shirts & d&eacute;bardeurs </p>
+            </div>
+            <div class="item col-2 px-4">
+              <img alt="PULL &amp; GILETS"
+                src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2022/content/home/S35/hp_entree_categorie_pull_gilets.png" />
+              <p class="text-center"> Pull & gilets </p>
+            </div>
+            <div class="item col-2 px-4">
+              <img alt="Blouses &amp; chemisiers"
+                src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2022/content/home/S35/hp_entree_categorie_blouses_chemisiers.png" />
+              <p class="text-center"> Blouses & chemisiers </p>
+            </div>
+            <div class="item col-2 px-4">
+              <img alt="robes"
+                src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2022/content/home/S35/hp_entree_categorie_robes.png" />
+              <p class="text-center"> Robes </p>
+            </div>
+          </div>
+        </div> -->
+        <div class="bestmoments">
+          <div class="bestmoments--items">
+            <a href="/c/64723/nouveautes#cmtype=content#cmname=nouveautes#cmcible=all#cmpos=hp_categ_p1" class="bestmoments--items--item">
+              <div class="bestmoments--items--item image">
+                <img alt="Nouveautés" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2021/content/home/S44/entree_categorie_nouveautes_.png">
+                <div class="bestmoments--items--item bestmomentsdesc">
+                  <p class="text-black">Nouveautés</p>
+                </div>
+              </div>
+            </a>
+            <a href="/c/64761/pulls-gilets#cmtype=content#cmname=pulls-gilets#cmcible=all#cmpos=hp_categ_p2" class="bestmoments--items--item">
+              <div class="bestmoments--items--item image">
+                <img alt="Pulls & Gilets" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2021/content/home/S44/entree_categorie_pullsgilets_.png">
+                <div class="bestmoments--items--item bestmomentsdesc">
+                  <p class="text-black">Pulls & Gilets</p>
+                </div>
+              </div>
+            </a>
+            <a href="/c/64776/manteaux-trenchs#cmtype=content#cmname=manteaux-trenchs#cmcible=all#cmpos=hp_categ_p3" class="bestmoments--items--item">
+              <div class="bestmoments--items--item image">
+                <img alt="Manteaux" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2021/content/home/S44/entree_categorie_manteaux_.png">
+                <div class="bestmoments--items--item bestmomentsdesc">
+                  <p class="text-black">Manteaux</p>
+                </div>
+              </div>
+            </a>
+            <a href="/c/64732/robes#cmtype=content#cmname=robes#cmcible=all#cmpos=hp_categ_p4" class="bestmoments--items--item">
+              <div class="bestmoments--items--item image">
+                <img alt="Robes" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2021/content/home/S44/entree_categorie_robes_.png">
+                <div class="bestmoments--items--item bestmomentsdesc">
+                  <p class="text-black">Robes</p>
+                </div>
+              </div>
+            </a>
+            <a href="/c/64764/jeans#cmtype=content#cmname=jeans#cmcible=all#cmpos=hp_categ_p5" class="bestmoments--items--item">
+              <div class="bestmoments--items--item image">
+                <img alt="Gilets" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2021/content/home/S44/entree_categorie_jeans_.png">
+                <div class="bestmoments--items--item bestmomentsdesc">
+                  <p class="text-black">Jeans</p>
+                </div>
+              </div>
+            </a>
+            <a href="/c/64760/blouses-chemisiers#cmtype=content#cmname=blouses-chemisiers#cmcible=all#cmpos=hp_categ_p6" class="bestmoments--items--item">
+              <div class="bestmoments--items--item image">
+                <img alt="Blouses & Chemisiers" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2021/content/home/S44/entree_categorie_blouseschemisiers_.png">
+                <div class="bestmoments--items--item bestmomentsdesc">
+                  <p class="text-black">Chemisiers</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer>
+    <hr>
+    <div class="container">
+      <div class="footer-reassurances row py-4 d-flex justify-content-lg-around justify-content-md-center">
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-around pb-lg-0 pb-5">
+          <div>
+            <p class="text-center mb-2"><img
+              src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw185272e4/images/reassurances/shipping.svg"
+              alt="livraison"></p>
+          <p class="text-center text-uppercase fw-bold fs-7 text-black-50">livraison <br>offerte</p>
+          </div>
+          <div>
+            <p class="text-center mb-2"><img
+              src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwecd61e04/images/reassurances/ereservation.svg"
+              alt="e-reservation"></p>
+          <p class="text-center text-uppercase fw-bold fs-7 text-black-50">e-réservation <br>sous 1h</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-around pb-lg-0 pb-5">
+          <div>
+            <p class="text-center mb-2"><img
+              src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwf95bf7fe/images/reassurances/commande.svg"
+              alt="échanges et retour"></p>
+          <p class="text-center text-uppercase fw-bold fs-7 text-black-50">Commande <br>en magasin</p>
+          </div>
+          <div>
+            <p class="text-center mb-2"><img
+              src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwc29cac60/images/reassurances/exchange.svg"
+              alt="échanges et retour"></p>
+          <p class="text-center text-uppercase fw-bold fs-7 text-black-50">Retours <br>gratuits</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12  d-flex justify-content-around pb-lg-0 pb-5">
+          <div>
+            <p class="text-center mb-2"><img
+              src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwee8f453b/images/reassurances/payment.svg"
+              alt="paiement sécurisé"></p>
+          <p class="text-center text-uppercase fw-bold fs-7 text-black-50">Paiement <br>sécurisé</p>
+          </div>
+          <div>
+            <p class="text-center mb-2"><img
+              src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwbb27e1af/images/reassurances/store.svg"
+              alt="magasins"></p>
+          <p class="text-center text-uppercase fw-bold fs-7 text-black-50">plus de <br>90 magasins</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="footer-about row d-flex justify-content-around py-4">
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <p class="text-uppercase text-center fw-bold">We are bzb</p>
+          <ul class="text-center">
+            <li class="text-black-50 pb-1 fs-7">La marque</li>
+            <li class="text-black-50 pb-1 fs-7">Nos éditos</li>
+            <li class="text-black-50 pb-1 fs-7">Les act(u)s</li>
+            <li class="text-black-50 pb-1 fs-7">Plan du site</li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <p class="text-uppercase text-center fw-bold">Bzb crew</p>
+          <ul class="text-center">
+            <li class="text-black-50 pb-1 fs-7">programme fidélité</li>
+            <li class="text-black-50 pb-1 fs-7">BZB recrute</li>
+            <li class="text-black-50 pb-1 fs-7">Devenir affilié</li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <p class="text-uppercase text-center fw-bold">Bzb c.a.r.e.s</p>
+          <ul class="text-center">
+            <li class="text-black-50 pb-1 fs-7">Notre programme</li>
+            <li class="text-black-50 pb-1 fs-7">Collection <span class="text-uppercase">bzb c.a.r.e.s</span></li>
+            <li class="text-black-50 pb-1 fs-7">Collection <span class="text-uppercase">bzb premium</span></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <p class="text-uppercase text-center fw-bold">Carte cadeau</p>
+          <ul class="text-center">
+            <li class="text-black-50 pb-1 fs-7">Offrir une carte cadeau</li>
+            <li class="text-black-50 pb-1 fs-7">Activer ma carte</li>
+            <li class="text-black-50 pb-1 fs-7">Pffrir une carte e-cadeau</li>
+            <li class="text-black-50 pb-1 fs-7">Consulter le solde</li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <p class="text-uppercase text-center fw-bold">Aides</p>
+          <ul class="text-center">
+            <li class="text-black-50 pb-1 fs-7">Questions / Réponses</li>
+            <li class="text-black-50 pb-1 fs-7">Contact service client</li>
+            <li class="text-black-50 pb-1 fs-7">Tous nos services</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="footer-juridique row d-flex justify-content-around py-4">
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <p class="text-center fs-8">Conditions de nos offres</p>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <p class="text-center fs-8">CGV</p>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <p class="text-center fs-8">Politique de confidentialité</p>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <p class="text-center fs-8">Mentions légales</p>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <p class="text-center fs-8">Cookies</p>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <p class="text-center fs-8">Valiuz</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+  //effect wording on scroll
+  $(window).on("load", function () {
+    $(window).scroll(function () {
+      var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+      $(".fade").each(function () {
+        /* Check the location of each desired element */
+        var objectBottom = $(this).offset().top + $(this).outerHeight();
+        /* If the element is completely within bounds of the window, fade it in */
+        if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+          if ($(this).css("opacity") == 0) {
+            $(this).fadeTo(500, 1);
+          }
+        } else { //object goes out of view (scrolling up)
+          if ($(this).css("opacity") == 1) {
+            $(this).fadeTo(500, 0);
+          }
+        }
+      });
+    }).scroll(); //invoke scroll-handler on page-load
+  });
+  // carrousel slick
+  $('.responsive').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    arrows: false,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [{
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    }, {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }, {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+
+  mobileOnlySlider(".onlyMobile", true, false, 767);
+
+function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
+	var slider = $($slidername);
+	var settings = {
+		mobileFirst: true,
+		dots: $dots,
+		arrows: $arrows,
+		responsive: [
+			{
+				breakpoint: $breakpoint,
+				settings: "unslick"
+			}
+		]
+	};
+
+	slider.slick(settings);
+
+	$(window).on("resize", function () {
+		if ($(window).width() > $breakpoint) {
+			return;
+		}
+		if (!slider.hasClass("slick-initialized")) {
+			return slider.slick(settings);
+		}
+	});
+} // Mobile Only Slider
+
+  //dropdown hover
+  document.addEventListener("DOMContentLoaded", function () {
+    // make it as accordion for smaller screens
+    if (window.innerWidth > 992) {
+
+      document.querySelectorAll('.navbar .nav-item').forEach(function (everyitem) {
+
+        everyitem.addEventListener('mouseover', function (e) {
+
+          let el_link = this.querySelector('a[data-bs-toggle]');
+
+          if (el_link != null) {
+            let nextEl = el_link.nextElementSibling;
+            el_link.classList.add('show');
+            nextEl.classList.add('show');
+          }
+
+        });
+        everyitem.addEventListener('mouseleave', function (e) {
+          let el_link = this.querySelector('a[data-bs-toggle]');
+
+          if (el_link != null) {
+            let nextEl = el_link.nextElementSibling;
+            el_link.classList.remove('show');
+            nextEl.classList.remove('show');
+          }
+
+
+        })
+      });
+
+    }
+    // end if innerWidth
+  });
+// DOMContentLoaded  end
+window.addEventListener('DOMContentLoaded', event => {
+
+// Navbar shrink function
+var navbarShrink = function () {
+    const navbarCollapsible = document.body.querySelector('#mainNav');
+    if (!navbarCollapsible) {
+        return;
+    }
+    if (window.scrollY === 0) {
+        navbarCollapsible.classList.remove('navbar-shrink')
+    } else {
+        navbarCollapsible.classList.add('navbar-shrink')
+    }
+
+};
+
+// Shrink the navbar 
+navbarShrink();
+
+// Shrink the navbar when page is scrolled
+document.addEventListener('scroll', navbarShrink);
+
+// Activate Bootstrap scrollspy on the main nav element
+const mainNav = document.body.querySelector('#mainNav');
+if (mainNav) {
+    new bootstrap.ScrollSpy(document.body, {
+        target: '#mainNav',
+        offset: 72,
+    });
+};
+
+// Collapse responsive navbar when toggler is visible
+const navbarToggler = document.body.querySelector('.navbar-toggler');
+const responsiveNavItems = [].slice.call(
+    document.querySelectorAll('#navbarResponsive .nav-link')
+);
+responsiveNavItems.map(function (responsiveNavItem) {
+    responsiveNavItem.addEventListener('click', () => {
+        if (window.getComputedStyle(navbarToggler).display !== 'none') {
+            navbarToggler.click();
+        }
+    });
+});
+
+});
+</script>
+
+</html>
