@@ -22,6 +22,9 @@
   .fs-7 {font-size:.9rem}
   .fs-8 {font-size:.8rem}
   .fs-9 {font-size:.7rem}
+  .fs-10 {font-size: 1rem;}
+  .fs-11 {font-size: 2rem;}
+  .fs-12 {font-size: 3rem;}
   .fa-bars,.navbar .navbar-brand {font-size:30px}
   .d-desk {display:block}
   .position-absolute.top-80 {top:80%}
@@ -30,6 +33,8 @@
   .bg-taupebzb {background-color:#c28c81!important}
   .navbar .nav-item {padding:.5rem .2rem}
   .navbar .nav-link {font-size:.9rem;color:#000}
+  .nav-item .nav-link span {top: 42%; left:43%; font-size:1.5rem;}
+  .nav-item .guideDenimItem .nav-link span {left:25%;}
   .form-label {margin-bottom:0}
   .fa-bars {color:#007bff}
   .banner-title,h1 {font-size:2.5rem}
@@ -73,7 +78,7 @@
 }
   @media screen and (min-width:1280px) {
   .banner-video iframe {height:39vw}
-  .nav-item .nav-link:focus,.nav-item .nav-link:hover,.nav-item.show .nav-link {background-color:#fff;color:#444;box-shadow:0 2px 0 0 #000;transition:.15s}
+  /* .nav-item .nav-link:focus,.nav-item .nav-link:hover,.nav-item.show .nav-link {background-color:#fff;color:#444;box-shadow:0 2px 0 0 #000;transition:.15s} */
 }
   </style>
 </head>
@@ -84,32 +89,36 @@
     <nav class="navbar navbar-expand-lg bg-white text-uppercase fixed-top" id="mainNav">
       <div class="container d-desk align-items-center">
         <a class="navbar-brand" href="#page-top"><img class="" src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw2208c0db/Bizzbee-SFRA/Logos-BZB/logo-bzb-new.svg" data-imagesmall="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw057128fe/Bizzbee-SFRA/BZB-logo-small.svg" alt="BZB vêtements homme et femme" width="auto" height="30" data-imagesmallwidth="60" data-imagesmallheight="40" data-imagewidth="auto" data-imageheight="30"></a>
-        <button class="navbar-toggler text-uppercase font-weight-bold bg-white text-white rounded border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> Menu <i class="fas fa-bars text-black"></i>
+        <button class="navbar-toggler text-uppercase font-weight-bold bg-white text-white rounded border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars text-black"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link text-uppercase py-3 px-0 px-lg-2 rounded" href="#">Nouveautés</a>
               <div class="ms-auto dropdown-menu w-100 col-xl-9 position-absolute start-0 submenu-group">
-                <ul class="d-flex justify-content-around submenu">
+                <ul class="d-flex justify-content-center submenu">
                   <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link fw-bold" href="#">New drop - Automne Hiver 2022</a>
                       <ul>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">Femme</a></li>
+                        <li><a class="nav-link" href="#">Homme</a></li>
+                        <li><a class="nav-link" href="#">Casting</a></li>
                       </ul>
                   </li>
                   <li class="nav-item mx-0 mx-lg-1">
                       <ul>
-                        <li><a class="nav-link" href="#"><img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw4d5f425a/Bizzbee-SFRA/2022/P1/new_biglayerfemme_hp1.jpg" alt="Nouveautés femme" loading="lazy" width="473" height="200"></a></li>
+                        <li class="position-relative"><a class="nav-link" href="#">
+                          <img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw4d5f425a/Bizzbee-SFRA/2022/P1/new_biglayerfemme_hp1.jpg" alt="Nouveautés femme" loading="lazy" width="473" height="200">
+                          <span class="title position-absolute text-uppercase text-white fw-bold">Femme</span>
+                        </a>
+                        </li>
                       </ul>
                   </li>
                   <li class="nav-item mx-0 mx-lg-1">
                     <ul>
-                      <li><a class="nav-link" href="#"><img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dwe0152211/Bizzbee-SFRA/2022/P1/new_biglayerhomme_hp1.jpg" alt="Nouveautés homme" loading="lazy" width="473" height="200"></a></li>
+                      <li class="position-relative"><a class="nav-link" href="#"><img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dwe0152211/Bizzbee-SFRA/2022/P1/new_biglayerhomme_hp1.jpg" alt="Nouveautés homme" loading="lazy" width="473" height="200">
+                        <span class="title position-absolute text-uppercase text-white fw-bold">Homme</span>
+                      </a></li>
                     </ul>
                 </li>
                 </ul>
@@ -118,46 +127,58 @@
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link text-uppercase py-3 px-0 px-lg-2 rounded" href="#">Femme</a>
               <div class="ms-auto dropdown-menu w-100 col-xl-9 position-absolute start-0 submenu-group">
-                <ul class="d-flex justify-content-around submenu">
+                <ul class="d-flex justify-content-between submenu">
                   <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link fw-bold" href="#">Hauts</a>
                       <ul>
-                        <li><a class="nav-link fw-bold" href="#">Hauts</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">T-shirt & Débardeur</a></li>
+                        <li><a class="nav-link" href="#">Chemise & Blouse</a></li>
+                        <li><a class="nav-link" href="#">Sweat</a></li>
+                        <li><a class="nav-link" href="#">Pulls & gilets</a></li>
+                        <li><a class="nav-link" href="#">Vest & blousons</a></li>
                       </ul>
                   </li>
                   <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link fw-bold" href="#">Bas</a>
                       <ul>
-                        <li><a class="nav-link fw-bold" href="#">Bas</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">Robes</a></li>
+                        <li><a class="nav-link" href="#">Combinaisons</a></li>
+                        <li><a class="nav-link" href="#">Jean</a></li>
+                        <li><a class="nav-link" href="#">Pantalons</a></li>
+                        <li><a class="nav-link" href="#">Jupes</a></li>
+                        <li><a class="nav-link" href="#">Shorts</a></li>
                       </ul>
                   </li>
                   <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link fw-bold" href="#">Accessoires</a>
                       <ul>
-                        <li><a class="nav-link fw-bold" href="#">Accessoires</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">Maillots de bain</a></li>
+                        <li><a class="nav-link" href="#">Lunettes de soleil</a></li>
+                        <li><a class="nav-link" href="#">Accessoires cheveux</a></li>
+                        <li><a class="nav-link" href="#">Chaussettes</a></li>
+                        <li><a class="nav-link" href="#">Casquettes & bonnets</a></li>
+                        <li><a class="nav-link" href="#">Underwear & pyjamas</a></li>
+                        <li><a class="nav-link" href="#">Foulard & écharpes</a></li>
+                        <li><a class="nav-link" href="#">ceintures</a></li>
                       </ul>
                   </li>
                   <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link fw-bold" href="#">Actus</a>
                     <ul>
-                      <li><a class="nav-link fw-bold" href="#">Actus</a></li>
-                      <li><a class="nav-link" href="#">item</a></li>
-                      <li><a class="nav-link" href="#">item</a></li>
-                      <li><a class="nav-link" href="#">item</a></li>
-                      <li><a class="nav-link" href="#">item</a></li>
-                      <li><a class="nav-link" href="#">item</a></li>
+                      <li><a class="nav-link" href="#">📣 New in</a></li>
+                      <li><a class="nav-link" href="#">BZB C.A.R.E.S. 🌍</a></li>
+                      <li><a class="nav-link" href="#">BZB Premium ⭐</a></li>
+                      <li><a class="nav-link" href="#">Basics</a></li>
+                      <li><a class="nav-link" href="#">Exclu web</a></li>
+                      <li><a class="nav-link" href="#">Tendance CAMPUS</a></li>
+                      <li><a class="nav-link" href="#">Skechers 👟</a></li>
+                      <li><a class="nav-link" href="#">Summer color</a></li>
                     </ul>
+                </li>
+                <li class="position-relative"><a class="nav-link" href="#">
+                  <img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw28d41983/Bizzbee-SFRA/2022/P1/new_layerfemme_hp1.jpg" alt="Nouveautés femme" loading="lazy" width="300" height="358">
+                  <span class="title position-absolute text-uppercase text-white fw-bold">New</span>
+                </a>
                 </li>
                 </ul>
               </div>
@@ -165,46 +186,54 @@
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link text-uppercase py-3 px-0 px-lg-2 rounded" href="#">Homme</a>
               <div class="ms-auto dropdown-menu w-100 col-xl-9 position-absolute start-0 submenu-group">
-                <ul class="d-flex justify-content-around submenu">
+                <ul class="d-flex justify-content-between submenu">
                   <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link fw-bold" href="#">Hauts</a>
                       <ul>
-                        <li><a class="nav-link fw-bold" href="#">Hauts</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">T-shirt & Polo</a></li>
+                        <li><a class="nav-link" href="#">Chemise</a></li>
+                        <li><a class="nav-link" href="#">Sweat</a></li>
+                        <li><a class="nav-link" href="#">Pulls & gilets</a></li>
+                        <li><a class="nav-link" href="#">Vest & blousons</a></li>
                       </ul>
                   </li>
                   <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link fw-bold" href="#">Bas</a>
                       <ul>
-                        <li><a class="nav-link fw-bold" href="#">Bas</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">Shorts & bermudas</a></li>
+                        <li><a class="nav-link" href="#">Jean</a></li>
+                        <li><a class="nav-link" href="#">Pantalons</a></li>
                       </ul>
                   </li>
                   <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link fw-bold" href="#">Accessoires</a>
                       <ul>
-                        <li><a class="nav-link fw-bold" href="#">Accessoires</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">Maillots de bain</a></li>
+                        <li><a class="nav-link" href="#">Lunettes de soleil</a></li>
+                        <li><a class="nav-link" href="#">Chaussettes</a></li>
+                        <li><a class="nav-link" href="#">Casquettes & bonnets</a></li>
+                        <li><a class="nav-link" href="#">Underwear & pyjamas</a></li>
+                        <li><a class="nav-link" href="#">ceintures</a></li>
+                        <li><a class="nav-link" href="#">Sacs & portefeuilles</a></li>
                       </ul>
                   </li>
                   <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link fw-bold" href="#">Actus</a>
                     <ul>
-                      <li><a class="nav-link fw-bold" href="#">Actus</a></li>
-                      <li><a class="nav-link" href="#">item</a></li>
-                      <li><a class="nav-link" href="#">item</a></li>
-                      <li><a class="nav-link" href="#">item</a></li>
-                      <li><a class="nav-link" href="#">item</a></li>
-                      <li><a class="nav-link" href="#">item</a></li>
+                      <li><a class="nav-link" href="#">📣 New in</a></li>
+                      <li><a class="nav-link" href="#">BZB C.A.R.E.S. 🌍</a></li>
+                      <li><a class="nav-link" href="#">BZB Premium ⭐</a></li>
+                      <li><a class="nav-link" href="#">Basics</a></li>
+                      <li><a class="nav-link" href="#">Tendance CAMPUS</a></li>
+                      <li><a class="nav-link" href="#">Skechers 👟</a></li>
+                      <li><a class="nav-link" href="#">Summer color</a></li>
+                      <li><a class="nav-link" href="#">Valise d'été</a></li>
                     </ul>
+                </li>
+                <li class="position-relative"><a class="nav-link" href="#">
+                  <img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw03fb7812/Bizzbee-SFRA/2022/P1/new_layerhomme_hp1.jpg" alt="Nouveautés homme" loading="lazy" width="300" height="358">
+                  <span class="title position-absolute text-uppercase text-white fw-bold">New</span>
+                </a>
                 </li>
                 </ul>
               </div>
@@ -215,25 +244,26 @@
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link text-uppercase py-3 px-0 px-lg-2 rounded" href="#">👖 guide denim</a>
               <div class="ms-auto dropdown-menu w-100 col-xl-9 position-absolute start-0 submenu-group">
-                <ul class="d-flex justify-content-around submenu">
+                <ul class="d-flex justify-content-center submenu">
                   <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link fw-bold" href="#">Trouver le jean idéal</a>
                       <ul>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">Guide denim femme</a></li>
+                        <li><a class="nav-link" href="#">Guide denim homme</a></li>
+                        <li><a class="nav-link" href="#">Tous les jeans femme</a></li>
+                        <li><a class="nav-link" href="#">Tous les jean homme</a></li>
                       </ul>
                   </li>
                   <li class="nav-item mx-0 mx-lg-1">
                       <ul>
-                        <li><a class="nav-link" href="#"><img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw4a549704/Bizzbee-SFRA/2022/P1/biglayerfemme-denim-P0E22.jpg" alt="denim femme" loading="lazy" width="473" height="200"></a></li>
+                        <li class="position-relative guideDenimItem"><a class="nav-link" href="#"><img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw4a549704/Bizzbee-SFRA/2022/P1/biglayerfemme-denim-P0E22.jpg" alt="denim femme" loading="lazy" width="473" height="200">
+                          <span class="title position-absolute text-uppercase text-white fw-bold">Guide denim femme</span></a></li>
                       </ul>
                   </li>
                   <li class="nav-item mx-0 mx-lg-1">
                     <ul>
-                      <li><a class="nav-link" href="#"><img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw4446e86d/Bizzbee-SFRA/2022/P1/biglayerhomme-denim-P0E22.jpg" alt="denim homme" loading="lazy" width="473" height="200"></a></li>
+                      <li class="position-relative guideDenimItem"><a class="nav-link" href="#"><img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw4446e86d/Bizzbee-SFRA/2022/P1/biglayerhomme-denim-P0E22.jpg" alt="denim homme" loading="lazy" width="473" height="200"><span class="title position-absolute text-uppercase text-white fw-bold">Guide denim homme</span></a>
+                      </li>
                     </ul>
                 </li>
                 </ul>
@@ -248,25 +278,24 @@
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link text-uppercase text-danger py-3 px-0 px-lg-2 rounded" href="#">Outlet</a>
               <div class="ms-auto dropdown-menu w-100 col-xl-9 position-absolute start-0 submenu-group">
-                <ul class="d-flex justify-content-around submenu">
+                <ul class="d-flex justify-content-center submenu">
                   <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link fw-bold" href="#">Par ici les petits prix</a>
                       <ul>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
-                        <li><a class="nav-link" href="#">item</a></li>
+                        <li><a class="nav-link" href="#">Femmes</a></li>
+                        <li><a class="nav-link" href="#">Hommes</a></li>
                       </ul>
                   </li>
                   <li class="nav-item mx-0 mx-lg-1">
                       <ul>
-                        <li><a class="nav-link" href="#"><img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dwb9b640f4/Bizzbee-SFRA/2021/P4/biglayer-outlet-f.jpg" alt="outlet femme" loading="lazy" width="473" height="200"></a></li>
+                        <li class="position-relative"><a class="nav-link" href="#"><img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dwb9b640f4/Bizzbee-SFRA/2021/P4/biglayer-outlet-f.jpg" alt="outlet femme" loading="lazy" width="473" height="200">
+                          <span class="title position-absolute text-uppercase text-white fw-bold">Femme</span></a></li>
                       </ul>
                   </li>
                   <li class="nav-item mx-0 mx-lg-1">
                     <ul>
-                      <li><a class="nav-link" href="#"><img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw51ab4072/Bizzbee-SFRA/2021/P4/biglayer-outlet-h.jpg" alt="outlet homme" loading="lazy" width="473" height="200"></a></li>
+                      <li class="position-relative"><a class="nav-link" href="#"><img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw51ab4072/Bizzbee-SFRA/2021/P4/biglayer-outlet-h.jpg" alt="outlet homme" loading="lazy" width="473" height="200">
+                        <span class="title position-absolute text-uppercase text-white fw-bold">Homme</span></a></li>
                     </ul>
                 </li>
                 </ul>
@@ -794,87 +823,53 @@
         <h4 class="text-uppercase text-center">
           <strong>Nos best du moment</strong>
         </h4>
-        <!-- <div class="bestmoments">
-          <div class="row d-flex justify-content-around">
-            <div class="item col-2 px-4">
-              <img alt="Nouveautés"
-                src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2022/content/home/S35/hp_entree_categorie_nouveautes.png" />
-              <p class="text-center"> Nouveaut&eacute;s </p>
-            </div>
-            <div class="item col-2 px-4">
-              <img alt="Denim"
-                src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2022/content/home/S35/hp_entree_categorie_denim.png" />
-              <p class="text-center"> Denim </p>
-            </div>
-            <div class="item col-2 px-4">
-              <img alt="T-shirts &amp; débardeurs"
-                src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2022/content/home/S35/hp_entree_categorie_tshirts_debardeurs.png" />
-              <p class="text-center"> T-shirts & d&eacute;bardeurs </p>
-            </div>
-            <div class="item col-2 px-4">
-              <img alt="PULL &amp; GILETS"
-                src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2022/content/home/S35/hp_entree_categorie_pull_gilets.png" />
-              <p class="text-center"> Pull & gilets </p>
-            </div>
-            <div class="item col-2 px-4">
-              <img alt="Blouses &amp; chemisiers"
-                src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2022/content/home/S35/hp_entree_categorie_blouses_chemisiers.png" />
-              <p class="text-center"> Blouses & chemisiers </p>
-            </div>
-            <div class="item col-2 px-4">
-              <img alt="robes"
-                src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2022/content/home/S35/hp_entree_categorie_robes.png" />
-              <p class="text-center"> Robes </p>
-            </div>
-          </div>
-        </div> -->
         <div class="bestmoments">
           <div class="bestmoments--items">
-            <a href="/c/64723/nouveautes#cmtype=content#cmname=nouveautes#cmcible=all#cmpos=hp_categ_p1" class="bestmoments--items--item">
+            <a href="#" class="bestmoments--items--item">
               <div class="bestmoments--items--item image">
-                <img alt="Nouveautés" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2021/content/home/S44/entree_categorie_nouveautes_.png">
+                <img alt="T-shirt femme" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwff837ebd/images/homepage/2022/t-shirt-f.jpg">
                 <div class="bestmoments--items--item bestmomentsdesc">
-                  <p class="text-black">Nouveautés</p>
+                  <p class="text-black">T-shirt femme</p>
                 </div>
               </div>
             </a>
-            <a href="/c/64761/pulls-gilets#cmtype=content#cmname=pulls-gilets#cmcible=all#cmpos=hp_categ_p2" class="bestmoments--items--item">
+            <a href="#" class="bestmoments--items--item">
               <div class="bestmoments--items--item image">
-                <img alt="Pulls & Gilets" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2021/content/home/S44/entree_categorie_pullsgilets_.png">
+                <img alt="T-shirt homme" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwe6b31767/images/homepage/2022/tshirt-h.png">
                 <div class="bestmoments--items--item bestmomentsdesc">
-                  <p class="text-black">Pulls & Gilets</p>
+                  <p class="text-black">T-shirt homme</p>
                 </div>
               </div>
             </a>
-            <a href="/c/64776/manteaux-trenchs#cmtype=content#cmname=manteaux-trenchs#cmcible=all#cmpos=hp_categ_p3" class="bestmoments--items--item">
+            <a href="#" class="bestmoments--items--item">
               <div class="bestmoments--items--item image">
-                <img alt="Manteaux" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2021/content/home/S44/entree_categorie_manteaux_.png">
+                <img alt="Robe femme" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwad4eb26b/images/homepage/2022/robe.jpg">
                 <div class="bestmoments--items--item bestmomentsdesc">
-                  <p class="text-black">Manteaux</p>
+                  <p class="text-black">Robe femme</p>
                 </div>
               </div>
             </a>
-            <a href="/c/64732/robes#cmtype=content#cmname=robes#cmcible=all#cmpos=hp_categ_p4" class="bestmoments--items--item">
+            <a href="#" class="bestmoments--items--item">
               <div class="bestmoments--items--item image">
-                <img alt="Robes" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2021/content/home/S44/entree_categorie_robes_.png">
+                <img alt="Sweat homme" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw8a6e0f12/images/homepage/2022/sweat-h.jpg">
                 <div class="bestmoments--items--item bestmomentsdesc">
-                  <p class="text-black">Robes</p>
+                  <p class="text-black">Sweat homme</p>
                 </div>
               </div>
             </a>
-            <a href="/c/64764/jeans#cmtype=content#cmname=jeans#cmcible=all#cmpos=hp_categ_p5" class="bestmoments--items--item">
+            <a href="#" class="bestmoments--items--item">
               <div class="bestmoments--items--item image">
-                <img alt="Gilets" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2021/content/home/S44/entree_categorie_jeans_.png">
+                <img alt="Pantalon homme" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw03089c1c/images/homepage/2022/pantalon-h.jpg">
                 <div class="bestmoments--items--item bestmomentsdesc">
-                  <p class="text-black">Jeans</p>
+                  <p class="text-black">Pantalon homme</p>
                 </div>
               </div>
             </a>
-            <a href="/c/64760/blouses-chemisiers#cmtype=content#cmname=blouses-chemisiers#cmcible=all#cmpos=hp_categ_p6" class="bestmoments--items--item">
+            <a href="#" class="bestmoments--items--item">
               <div class="bestmoments--items--item image">
-                <img alt="Blouses & Chemisiers" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2021/content/home/S44/entree_categorie_blouseschemisiers_.png">
+                <img alt="Pantalon femme" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw6ab9596d/images/homepage/2022/pantalon-f.jpg">
                 <div class="bestmoments--items--item bestmomentsdesc">
-                  <p class="text-black">Chemisiers</p>
+                  <p class="text-black">Pantalon femme</p>
                 </div>
               </div>
             </a>
